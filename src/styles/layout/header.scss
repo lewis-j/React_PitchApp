@@ -1,0 +1,20 @@
+.Header {
+  @include text(18px, 30px, 500);
+  background-color: getColor(primary);
+
+  &-link {
+    display: inline-block;
+    color: getColor(secondary);
+  }
+  &-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &-NavLink {
+    color: getColor(secondary);
+  }
+  &-NavLink.active {
+    color: getColor(active);
+  }
+}

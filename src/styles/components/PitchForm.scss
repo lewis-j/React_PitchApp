@@ -1,0 +1,29 @@
+.PitchForm {
+  &-btn {
+    margin: 2px;
+    padding: 3px;
+
+    font-size: 11px;
+  }
+}
+
+.RadioButtons {
+  &-btn {
+    margin: 3px;
+    padding: 7px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+
+    font-size: 10px;
+
+    background-color: getColor(darkerGrey);
+    color: getColor(secondary);
+  }
+
+  &-btn.selected {
+    background-color: getColor(btnHighlight);
+    color: getColor(darkerGrey);
+  }
+}

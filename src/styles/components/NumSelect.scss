@@ -1,0 +1,12 @@
+.NumSelect {
+  &-innerCircle:active {
+    stroke: getColor(borderActive);
+    stroke-width: 4;
+  }
+
+  $outerCircles: outerCircle;
+
+  &-#{$outerCircles}-text {
+    fill: getColor(secondary);
+  }
+}

@@ -1,0 +1,13 @@
+.PitchGraph {
+  $block: &;
+
+  margin: 5px 0px;
+
+  &-rect {
+    stroke: getColor(darkGrey);
+  }
+
+  &-line {
+    stroke: getColor(darkGrey);
+  }
+}

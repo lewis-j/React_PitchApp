@@ -1,0 +1,21 @@
+@use "sass:map";
+
+$colors: (
+  primary: #e48e80,
+  secondary: #e6dccd,
+  btnHighlight: #b5bec1,
+  active: #506c64,
+  borderActive: #e59700,
+  darkerGrey: #7d7d7d,
+  darkGrey: #999793,
+  lightGrey: #dad9f1,
+);
+
+@function getColor($name) {
+  @if map-has-key($colors, $name) {
+    @return map-get($colors, $name);
+  }
+
+  @warn "The key #{$name} is not in the map ’$layer’";
+  @return null;
+}
